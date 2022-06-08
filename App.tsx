@@ -2,9 +2,12 @@ import * as React from 'react';
 import Button from './components/Button'
 import './style.css';
 
-const { useEffect } = React;
+const { useEffect,useLayoutEffect,useState } = React;
 
 export default function App() {
+  useLayoutEffect(()=>{
+    console.log('App useLayoutEffect')
+  })
   useEffect(() => {
     console.log('App useEffect');
   }, []);
