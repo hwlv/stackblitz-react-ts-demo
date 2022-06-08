@@ -8,7 +8,7 @@ const Button = (props: any) => {
     console.log('Button useEffect');
   }, []);
 
-  return <button></button>;
+  return <button>{props.children}</button>;
 };
 
 export default Button;

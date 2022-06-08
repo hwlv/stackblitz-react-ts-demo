@@ -13,7 +13,7 @@ export default function App() {
     <div>
       <h1>Hello StackBlitz!</h1>
       <p>Start editing to see some magic happen :)</p>
-      <Button></Button>
+      <Button>按钮</Button>
     </div>
   );
 }
