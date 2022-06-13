@@ -11,7 +11,7 @@ const Button = (props: any) => {
 
   return (
     <div>
-      <Link to="/lifeCycle">lifeCycle</Link> |{' '}
+      <Link to="/">home</Link> | <Link to="/lifeCycle">lifeCycle</Link> |{' '}
       <Link to="/expenses">Expenses</Link>
     </div>
   );
