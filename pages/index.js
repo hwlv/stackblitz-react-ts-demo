@@ -3,7 +3,7 @@ const files = require.context('.', true, /\.tsx$/);
 const pages = [];
 
 files.keys().forEach((key) => {
-  let i = key.replace(/(\.\/|\.js)/g, '');
+  let i = key.replace(/(\.\/|\.tsx)/g, '');
 
   if (i !== 'index') {
     let comp = files(key).default;
