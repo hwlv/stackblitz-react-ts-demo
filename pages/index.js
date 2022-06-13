@@ -1,4 +1,4 @@
-const files = require.context('.', true, /\.jsx$/);
+const files = require.context('.', true, /\.tsx$/);
 
 const pages = [];
 

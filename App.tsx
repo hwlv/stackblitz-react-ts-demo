@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Button from './components/Button';
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route,Link } from 'react-router-dom';
+import LifeCycle from './pages/LifeCycle';
+
 import './style.css';
 
 const { useEffect, useLayoutEffect, useState } = React;
@@ -23,6 +25,10 @@ export default function App() {
         <Link to="/lifeCycle">lifeCycle</Link> |{' '}
         <Link to="/expenses">Expenses</Link>
       </div>
+      <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="lifeCycle" element={<LifeCycle />} />
+    </Routes>
     </div>
   );
 }
