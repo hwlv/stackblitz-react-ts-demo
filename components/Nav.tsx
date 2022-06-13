@@ -1,5 +1,6 @@
 import * as React from 'react';
 const { useEffect, useState } = React;
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 const Button = (props: any) => {
   const [state, setState] = useState('');
@@ -8,7 +9,12 @@ const Button = (props: any) => {
     console.log('Button useEffect');
   }, []);
 
-  return <div>dd</div>;
+  return (
+    <div>
+      <Link to="/lifeCycle">lifeCycle</Link> |{' '}
+      <Link to="/expenses">Expenses</Link>
+    </div>
+  );
 };
 
 export default Button;
