@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import Nav from './components/Nav';
 import LifeCycle from './pages/LifeCycle';
+import BasicRoute from './router/BasicRoute'
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -13,9 +14,10 @@ root.render(
   <BrowserRouter>
     {/* <App /> */}
     <Nav></Nav>
-    <Routes>
+    {/* <Routes>
       <Route path="/" element={<App />} />
       <Route path="lifeCycle" element={<LifeCycle />} />
-    </Routes>
+    </Routes> */}
+    <BasicRoute/>
   </BrowserRouter>
 );

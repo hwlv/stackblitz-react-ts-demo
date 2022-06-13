@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Button from './components/Button';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
 import './style.css';
 
 const { useEffect, useLayoutEffect, useState } = React;
