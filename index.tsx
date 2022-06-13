@@ -8,8 +8,11 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
-    <BrowserRouter>
+  <BrowserRouter>
     <App />
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="lifeCycle" element={<LifeCycle />} />
+    </Routes>
   </BrowserRouter>
-   
 );

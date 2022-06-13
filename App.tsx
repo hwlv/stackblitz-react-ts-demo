@@ -25,10 +25,6 @@ export default function App() {
         <Link to="/lifeCycle">lifeCycle</Link> |{' '}
         <Link to="/expenses">Expenses</Link>
       </div>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="lifeCycle" element={<LifeCycle />} />
-      </Routes>
     </div>
   );
 }
