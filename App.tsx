@@ -16,6 +16,7 @@ export default function App() {
   }, []);
 
   return (
+    <BrowserRouter>
     <div>
       <h1>Hello StackBlitz!</h1>
       <p>Start editing to see some magic happen :)</p>
@@ -29,6 +30,9 @@ export default function App() {
       <Route path="/" element={<App />} />
       <Route path="lifeCycle" element={<LifeCycle />} />
     </Routes>
+
     </div>
+  </BrowserRouter>
+
   );
 }
