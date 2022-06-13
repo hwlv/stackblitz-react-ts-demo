@@ -14,8 +14,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <Button>按钮</Button>
+      <h1>life</h1>
     </div>
   );
 }
