@@ -20,7 +20,7 @@ export default function App() {
       <Button>按钮</Button>
       <Link to="/">home</Link>
       <div>
-        <Link to="/invoices">Invoices</Link> |{' '}
+        <Link to="/lifeCycle">lifeCycle</Link> |{' '}
         <Link to="/expenses">Expenses</Link>
       </div>
     </div>
