@@ -6,12 +6,12 @@ import './style.css';
 const { useEffect, useLayoutEffect, useState } = React;
 
 export default function App() {
-  useLayoutEffect(() => {
-    console.log('App useLayoutEffect');
-  });
-  useEffect(() => {
-    console.log('App useEffect');
-  }, []);
+  // useLayoutEffect(() => {
+  //   console.log('App useLayoutEffect');
+  // });
+  // useEffect(() => {
+  //   console.log('App useEffect');
+  // }, []);
 
   return (
     <div>
