@@ -24,14 +24,29 @@ export default function App() {
     </div>
   );
 }
-
+const random = () => {
+  return 10 + Math.random() * 200
+}
 function UseEffectDemo() {
-  const [value, setValue] = useState(0);
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
+
   useEffect(() => {
-    if (value === 0) {
-      setValue(10 + Math.random() * 200);
+    if (count1 === 0) {
+      setCount1(random());
     }
-  }, [value]);
-  console.log('render', value);
-  return <div onClick={() => setValue(0)}>value: {value}</div>;
+  }, [count1]);
+
+  useLayoutEffect(() => {
+    if (count2 === 0) {
+      setCount2(random());
+    }
+  }, [count2]);
+
+  return (
+    <div className="useLayoutEffect">
+      <div onClick={() => setCount1(0)}>useEffect：{count1}</div>
+      <div onClick={() => setCount2(0)}>useLayoutEffect：{count2}</div>
+    </div>
+  );
 }
