@@ -21,11 +21,7 @@ export default function App() {
       <h1>Hello StackBlitz!</h1>
       <p>Start editing to see some magic happen :)</p>
       <Button>按钮</Button>
-      <Link to="/">home</Link>
-      <div>
-        <Link to="/lifeCycle">lifeCycle</Link> |{' '}
-        <Link to="/expenses">Expenses</Link>
-      </div>
+  
     </div>
   );
 }
