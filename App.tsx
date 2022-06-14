@@ -42,7 +42,7 @@ function UseEffectDemo() {
       setCount2(random());
     }
   }, [count2]);
-  console.log('render...');
+  console.log('render...' + count1);
   return (
     <div className="useLayoutEffect">
       <div onClick={() => setCount1(0)}>useEffect：{count1}</div>
