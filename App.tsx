@@ -8,7 +8,9 @@ const { useEffect, useLayoutEffect, useState } = React;
 export default function App() {
   useLayoutEffect(() => {
     console.log('App useLayoutEffect');
-    for (let i = 0; i < 10 * 1000; i++) {}
+    // for (let i = 0; i < 10 * 100000; i++) {
+    //   console.log('App useLayoutEffect');
+    // }
   });
   // useEffect(() => {
   //   console.log('App useEffect');
