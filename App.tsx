@@ -25,8 +25,8 @@ export default function App() {
   );
 }
 const random = () => {
-  return 10 + Math.random() * 200
-}
+  return 10 + Math.random() * 200;
+};
 function UseEffectDemo() {
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
@@ -42,7 +42,7 @@ function UseEffectDemo() {
       setCount2(random());
     }
   }, [count2]);
-
+  console.log('render...');
   return (
     <div className="useLayoutEffect">
       <div onClick={() => setCount1(0)}>useEffect：{count1}</div>
