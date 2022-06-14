@@ -19,9 +19,19 @@ export default function App() {
   return (
     <div>
       <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
       <Button>按钮</Button>
-  
+      <UseEffectDemo />
     </div>
   );
+}
+
+function UseEffectDemo() {
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    if (value === 0) {
+      setValue(10 + Math.random() * 200);
+    }
+  }, [value]);
+  console.log('render', value);
+  return <div onClick={() => setValue(0)}>value: {value}</div>;
 }
