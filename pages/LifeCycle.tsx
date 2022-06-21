@@ -25,7 +25,7 @@ class Father extends React.Component {
     super(props);
     this.state = {
       isChanged: 'false',
-      val:0
+      val: 0,
     };
   }
   componentDidUpdate() {
@@ -33,6 +33,8 @@ class Father extends React.Component {
   }
   componentDidMount() {
     console.log('SuperComponent Mounted');
+    this.setState({ val: this.state.val + 1 });
+    console.log(this.state.val);
   }
   render() {
     return <div>父组件</div>;
@@ -49,6 +51,7 @@ export default function App() {
 
   return (
     <div>
+      <Father />
       <Child />
       <h1>life</h1>
     </div>
