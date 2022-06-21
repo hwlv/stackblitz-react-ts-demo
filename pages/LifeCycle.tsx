@@ -19,11 +19,13 @@ class Child extends React.Component {
   }
 }
 
+// state异步问题
 class Father extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       isChanged: 'false',
+      val:0
     };
   }
   componentDidUpdate() {
