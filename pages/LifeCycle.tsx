@@ -35,6 +35,8 @@ class Father extends React.Component {
     console.log('SuperComponent Mounted');
     this.setState({ val: this.state.val + 1 });
     console.log(this.state.val);
+    this.setState({ val: this.state.val + 1 });
+    console.log(this.state.val);
   }
   render() {
     return <div>父组件</div>;
